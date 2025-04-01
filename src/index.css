@@ -1,0 +1,61 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  flex: 1 1 calc(33% - 20px);
+  box-sizing: border-box;
+}
+
+.profile-card img {
+  max-width: 100%;
+}
+
+.map-modal {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #333;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    flex: 1 1 100%;
+  }
+}
