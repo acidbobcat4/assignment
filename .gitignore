@@ -1,24 +1,36 @@
-# Logs
-logs
-*.log
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+.vite/
+
+# React specific
+build/
+
+# Vite config
+.vite/
+
+# dotenv environment files
+.env
+.env.local
+.env.*.local
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# IDEs
+.vscode/
+.idea/
+*.iml
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Temporary files
+*.swp
